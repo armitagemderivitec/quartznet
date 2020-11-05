@@ -15,7 +15,7 @@ namespace Quartz
             {
                 services.Configure(configure);
             }
-            return services.AddSingleton<IHostedService, QuartzHostedService>();
+            return services.AddHostedService<QuartzHostedService>();
         }
     }
 }
